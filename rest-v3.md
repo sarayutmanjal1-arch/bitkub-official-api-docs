@@ -1188,21 +1188,6 @@ N/A — V3 uses numeric error codes, not HTTP status-based codes.
 | 25 | KYC level 1 is required to proceed |
 | 30 | Limit exceeds |
 
-### Withdrawal Errors
-
-| Code | Description |
-| ---- | ----------- |
-| 40 | Pending withdrawal exists |
-| 41 | Invalid currency for withdrawal |
-| 42 | Address is not in whitelist |
-| 43 | • Failed to deduct crypto <br> • Insufficient balance <br> • Deduct balance failed |
-| 44 | Failed to create withdrawal record |
-| 47 | Withdrawal amount exceeds the maximum limit |
-| 48 | • Invalid bank account <br> • User bank id is not found <br> • User bank is unavailable |
-| 49 | Bank limit exceeds |
-| 50 | • Pending withdrawal exists <br> • Cannot perform the action due to pending transactions |
-| 51 | Withdrawal is under maintenance |
-
 ### System Errors
 
 | Code | Description |
@@ -1246,6 +1231,5 @@ Exceeding the limit blocks requests for 30 seconds (HTTP 429). Limits apply per 
 | /api/market/cancel-order | 200 req/sec |
 | /api/servertime | 2,000 req/10secs |
 | /api/status | 100 req/sec |
-| /api/fiat/* | 20 req/sec |
 | /api/user/* | 20 req/sec |
 | /tradingview/* | 100 req/sec |
